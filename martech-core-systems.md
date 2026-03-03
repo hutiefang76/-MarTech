@@ -3,6 +3,18 @@
 ## 目标
 明确 MarTech 核心系统与电商周边系统的依赖关系、数据流向和实现边界。
 
+## 目录结构
+
+1. 关键口径  
+2. 核心系统（按依赖关系）  
+3. 周边系统（电商）  
+4. 系统依赖关系图（字符画）  
+5. CDP 实现层详细规划  
+6. MA 实现层详细规划  
+7. MA 典型触达场景（按时效分类，10个）  
+8. 场景1技术细节（电销结束同意触达）  
+9. 场景10技术细节（会员降级预警）
+
 ## 关键口径
 
 1. CDP 采用“半一体”口径：内含数据接入与数据底座能力。  
@@ -171,21 +183,22 @@
 4. 内容与实验层：模板管理、渲染、A/B 分流。  
 5. 回执与反馈层：回执聚合、效果回传 CDP/BI。
 
-### MA 微服务模块（建议）
+### MA 微服务模块（含下属模块）
 
-| 服务名 | 核心职责 | 主要存储 |
-| --- | --- | --- |
-| `ma-campaign-service` | 活动管理（创建、发布、状态流转） | MySQL |
-| `ma-journey-service` | 旅程编排（节点、分支、等待、退出） | MySQL |
-| `ma-trigger-service` | 消费 CDP 标签变化/行为事件，触发旅程实例 | Kafka + Redis |
-| `ma-rule-engine-service` | 规则执行（触发条件、频控、去重） | Redis + MySQL |
-| `ma-decision-engine-service` | 决策执行（策略树、优先级、Offer 决策） | Redis + MySQL |
-| `ma-segment-sync-service` | 同步 CDP 人群包和标签快照 | Redis + MySQL |
-| `ma-template-service` | 模板、变量、版本管理 | MySQL |
-| `ma-render-service` | 个性化渲染（变量替换、内容拼装） | Redis |
-| `ma-channel-service` | 通道路由与发送编排（下挂各渠道适配器） | Redis + MySQL |
-| `ma-scheduler-service` | 定时活动编排（可对接 DolphinScheduler） | MySQL |
-| `ma-feedback-service` | 发送日志、回执聚合、效果回流 CDP/BI | Doris + MySQL + Kafka |
+| 服务名 | 下属模块（如有） | 核心职责 | 主要存储 |
+| --- | --- | --- | --- |
+| `ma-campaign-service` | `campaign-draft`, `campaign-publish` | 活动管理（创建、发布、状态流转） | MySQL |
+| `ma-journey-service` | `journey-designer`, `journey-instance` | 旅程编排（节点、分支、等待、退出） | MySQL |
+| `ma-trigger-service` | `event-trigger`, `delay-trigger` | 消费 CDP 标签变化/行为事件，触发旅程实例 | Kafka + Redis |
+| `ma-rule-engine-service` | `rule-parser`, `rule-executor` | 规则执行（触发条件、频控、去重） | Redis + MySQL |
+| `ma-risk-control-service` | `fatigue-control`, `quiet-hours`, `suppression-list` | 触达风控门控（疲劳度、黑白名单、静默期、反骚扰策略） | Redis + MySQL |
+| `ma-decision-engine-service` | `channel-ranking`, `offer-selector`, `conflict-arbiter` | 决策执行（策略树、优先级、Offer 决策） | Redis + MySQL |
+| `ma-segment-sync-service` | `full-sync`, `delta-sync` | 同步 CDP 人群包和标签快照 | Redis + MySQL |
+| `ma-template-service` | `template-repo`, `variable-dict`, `template-version` | 模板、变量、版本管理 | MySQL |
+| `ma-render-service` | `render-core`, `personalization-render` | 个性化渲染（变量替换、内容拼装） | Redis |
+| `ma-channel-service` | `sms-adapter`, `email-adapter`, `wecom-adapter`, `wechat-adapter`, `push-adapter`, `inbox-adapter` | 通道路由与发送编排（下挂各渠道适配器） | Redis + MySQL |
+| `ma-scheduler-service` | `cron-dispatcher`, `dolphinscheduler-bridge` | 定时活动编排（可对接 DolphinScheduler） | MySQL |
+| `ma-feedback-service` | `receipt-consumer`, `delivery-tracker`, `retry-dlq-handler` | 发送日志、回执聚合、效果回流 CDP/BI | Doris + MySQL + Kafka |
 
 ### MA 规则引擎 / 决策引擎技术建议（明确）
 
@@ -207,10 +220,10 @@
 2. `DMN/Flowable`（可选）用于可视化策略编排和审核。  
 3. 特征输入来自 CDP 标签/画像与 Redis 热特征，输出“最佳下一动作”。
 
-### MA 防用户疲劳（关键，放在调用链硬门控）
+### MA 防用户疲劳
 
 统一执行链：
-`ma-trigger-service -> ma-rule-engine-service(疲劳门控) -> ma-decision-engine-service(渠道仲裁) -> ma-channel-service`
+`ma-trigger-service -> ma-rule-engine-service -> ma-risk-control-service(疲劳/风控门控) -> ma-decision-engine-service(渠道仲裁) -> ma-channel-service`
 
 1. 全局频控门控：`ma-rule-engine-service` 用 Redis 计数，先判 `日/周总触达上限`，超限直接拦截。  
 2. 渠道频控门控：短信/邮件/企微各自上限，避免单渠道轰炸。  
@@ -220,12 +233,12 @@
 6. 抑制名单：退订/投诉/黑名单在门控阶段直接拒绝发送。  
 7. 动态降频：`ma-feedback-service` 回流退订/未读/投诉后，动态调低后续触达频率。
 
-### MA 核心依赖关系图（字符画）
+### MA 核心依赖关系图
 
 ```text
 [Enterprise API Gateway] ---> [ma-campaign-service / ma-journey-service]
 [CDP: segment/tag/event] ---> [ma-trigger-service] ---> [ma-rule-engine-service]
-                                                     \-> [ma-decision-engine-service]
+                                                     \-> [ma-risk-control-service] -> [ma-decision-engine-service]
                                                               |
                                                               v
                                                     [ma-channel-service]
@@ -243,7 +256,7 @@
 3. BI 负责评估与归因：触达效果、渠道贡献、预算优化。  
 4. MA 回传回执与触达日志给 CDP/BI，形成闭环。
 
-### MA 营销触达下游微服务清单（仅触达相关）
+### MA 营销触达下游微服务清单
 
 #### 通道触达类
 
@@ -273,12 +286,108 @@
 #### 弱实时触达（小时级到 T+1）
 
 1. 浏览高意向未购：同品类浏览达到阈值后 2 小时触发邮件/站内信推荐。  
-2. 新客注册二次提醒：首触达后 24 小时未转化再次提醒。  
-3. 签收后复购：订单签收 T+1 发送关怀消息与复购券。  
-4. 售后完成回流：售后完成后触发满意度邀请与定向补偿券触达。
+2. 签收后复购：订单签收 T+1 发送关怀消息与复购券。  
+3. 售后完成回流：售后完成后触发满意度邀请与定向补偿券触达。
 
 #### 批量触达（日/周/月定时）
 
 1. 老客召回：30 天未下单用户按日批圈选，先发短信和站内信，48 小时未回流再发企微+券。  
 2. 券即将过期：按日批扫描到期券，到期前 24 小时发送短信+Push 催使用。  
 3. 会员降级预警：按周批识别降级风险用户，降级前 7 天发送企微/邮件保级提醒。
+
+## 场景1技术细节（电销结束同意触达）
+
+### 技术点1：Kafka 一致性语义（EOS）
+
+`EOS`（Exactly-Once Semantics）是“精确一次语义”：同一条消息即使发生重试或故障恢复，也只生效一次。
+
+工程化结论：
+
+1. 纯 Kafka 链路（消费后再写 Kafka）可用事务实现 EOS。  
+2. 跨数据库/外部系统时，通常采用“业务精确一次（Effectively Once）”。  
+3. 推荐组合：幂等键 + 唯一约束 + 手动提交 offset + Outbox + DLQ。
+
+在场景1中的语义建议：
+
+1. 优惠券发放：`精确一次`（微服务幂等）。  
+实现：`bizId` 幂等键、券发放表唯一约束、重复消息直接跳过。  
+2. 短信发送：`至多一次（At-Most-Once）`  
+实现：禁止自动重试，失败记录并人工/策略补偿，避免重复短信骚扰。  
+3. 邮件/企微：`至少一次 + 去重`  
+实现：下游以 messageId 去重，允许重试提高送达率。
+
+Spring Cloud Alibaba / Spring Kafka 消费侧要点：
+
+1. `enable-auto-commit=false`，使用手动 ack。  
+2. 消费逻辑中先做幂等校验，再执行业务，再提交 offset。  
+3. 对外事件发布采用 Outbox（避免“数据库成功但消息未发”）。  
+4. 消费失败进入重试与死信队列（DLQ），不阻塞主链路。
+
+### 技术点2：分布式事务（Seata）
+
+场景：电销结束同意触达时，发放“权益包（优惠券 + 积分）”。
+
+参与服务：
+
+1. `ma-trigger-service`  
+2. `ma-decision-engine-service`  
+3. `ma-benefit-orchestrator-service`（全局事务发起方）  
+4. `coupon-service`  
+5. `points-service`  
+6. `activity-service`（活动名额/库存）
+
+事务链路（TCC）：
+
+1. `ma-benefit-orchestrator-service` 开启 `@GlobalTransactional`。  
+2. Try 阶段：`activity-service` 冻结名额，`coupon-service` 冻结券资源，`points-service` 冻结积分额度。  
+3. 全部 Try 成功后 Confirm：正式发券、发积分、扣减名额。  
+4. 任一环节失败则 Cancel：全部解冻回滚。
+
+边界说明：
+
+1. `Seata` 负责跨服务资源一致性。  
+2. 券发放仍需幂等键（`bizId`）保证“业务精确一次”。  
+3. 短信/邮件/企微不纳入全局事务，保持异步触达以避免长事务。
+
+## 场景10技术细节（会员降级预警）
+
+### 执行链路（周批 + 实时状态）
+
+1. `DolphinScheduler` 周批触发风险识别任务（Flink/Spark 读取 Iceberg + Doris 明细）。  
+2. 产出风险名单（`userId`, `downgradeDate`, `riskLevel`）写入 Kafka。  
+3. `ma-segment-sync-service` 入库并生成 D-7 触达计划。  
+4. 到触达窗口后，`ma-scheduler-service` 触发 `ma-rule-engine-service` 与 `ma-risk-control-service` 校验。  
+5. `ma-channel-service` 调用 `wecom-message-service`、`email-service` 发送。  
+6. 回执事件进入 Kafka，由 `ma-feedback-service` 更新 Redis 实时状态并落 Doris 看板表。
+
+### 技术点1：Redis 实时状态（用户级）
+
+Key：`ma:member:warn:user:{campaignId}:{userId}`（Hash）
+
+字段建议：
+
+1. `total_sent`：总发送数  
+2. `total_read`：总已读数  
+3. `wecom_sent`、`wecom_read`  
+4. `email_sent`、`email_read`  
+5. `send_fail`  
+6. `last_send_ts`、`last_read_ts`  
+7. `next_send_ts`  
+8. `status`（`PENDING/SENT/PART_READ/COMPLETED/EXPIRED`）
+
+### 技术点2：Doris 活动实时看板（实时数仓口径）
+
+建议使用 Doris 明细 + 汇总两层：
+
+1. 明细层表：`dwd_ma_member_warn_event`（发送、送达、已读、失败事件）。  
+2. 看板层表：`ads_ma_member_warn_dashboard`（按 `campaignId/date/channel` 聚合）。  
+3. 核心指标：`target_total`, `sent_total`, `read_total`, `fail_total`, `wecom_sent/read`, `email_sent/read`。  
+4. 更新方式：Flink 持续写入明细，分钟级聚合刷新看板（或实时聚合写入）。
+
+### 技术点3：Redis 与 Doris 一致性
+
+1. 回执消费使用 `msgId` 幂等，先更新 Redis 实时态。  
+2. Redis 计数用 Lua 脚本原子 `HINCRBY`，避免并发计数错误。  
+3. Doris 作为分析与审计口径（准实时最终一致），Redis 作为在线查询口径。  
+4. 每日执行 Redis-Doris 对账任务，发现偏差后按事件回放修正。  
+5. Redis 设置 TTL（如 90 天），长期数据仅保留 Doris。
