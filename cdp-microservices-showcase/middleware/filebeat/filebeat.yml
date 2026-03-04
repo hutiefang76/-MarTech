@@ -1,0 +1,14 @@
+filebeat.inputs:
+  - type: filestream
+    id: cdp-services
+    enabled: true
+    paths:
+      - /workspace/showcase/*/logs/*.log
+      - /workspace/showcase/logs/*.log
+
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~
+
+output.logstash:
+  hosts: ["logstash:5044"]

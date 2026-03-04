@@ -1,0 +1,9 @@
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\CdpSegmentServiceApplication.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\config\SegmentModuleConfig.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\controller\CdpSegmentServiceController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\controller\SegmentEntryController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\entity\SegmentEntity.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\feign\SegmentDemoFeignClient.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\service\impl\SegmentServiceImpl.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\service\SegmentService.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-segment-service\src\main\java\cn\javahome\frank\cdp\segment\util\SegmentUtil.java

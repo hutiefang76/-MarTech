@@ -1,0 +1,9 @@
+cn\javahome\frank\cdp\identity\CdpIdentityServiceApplication.class
+cn\javahome\frank\cdp\identity\controller\IdentityEntryController.class
+cn\javahome\frank\cdp\identity\entity\IdentityEntity.class
+cn\javahome\frank\cdp\identity\service\impl\IdentityServiceImpl.class
+cn\javahome\frank\cdp\identity\feign\IdentityDemoFeignClient.class
+cn\javahome\frank\cdp\identity\controller\CdpIdentityServiceController.class
+cn\javahome\frank\cdp\identity\util\IdentityUtil.class
+cn\javahome\frank\cdp\identity\config\IdentityModuleConfig.class
+cn\javahome\frank\cdp\identity\service\IdentityService.class

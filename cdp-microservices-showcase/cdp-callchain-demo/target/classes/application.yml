@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: cdp-callchain-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        instance-id: ${spring.application.name}-${APP_INSTANCE:1}-${server.port}
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cdp_demo?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    hikari:
+      initialization-fail-timeout: 0
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+  sql:
+    init:
+      mode: never
+
+server:
+  port: 19180
+
+cdp:
+  target:
+    connector-control-base-url: http://localhost:19101
+    tag-task-base-url: http://localhost:19141
+    flink-job-base-url: http://localhost:19190
+
+logging:
+  file:
+    name: logs/cdp-callchain-demo-${APP_INSTANCE:1}.log
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  otlp:
+    tracing:
+      endpoint: http://localhost:4318/v1/traces

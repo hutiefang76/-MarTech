@@ -1,0 +1,9 @@
+cn\javahome\frank\cdp\audience\feign\AudienceDemoFeignClient.class
+cn\javahome\frank\cdp\audience\controller\AudienceEntryController.class
+cn\javahome\frank\cdp\audience\util\AudienceUtil.class
+cn\javahome\frank\cdp\audience\config\AudienceModuleConfig.class
+cn\javahome\frank\cdp\audience\CdpAudienceServiceApplication.class
+cn\javahome\frank\cdp\audience\controller\CdpAudienceServiceController.class
+cn\javahome\frank\cdp\audience\service\impl\AudienceServiceImpl.class
+cn\javahome\frank\cdp\audience\entity\AudienceEntity.class
+cn\javahome\frank\cdp\audience\service\AudienceService.class

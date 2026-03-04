@@ -1,0 +1,11 @@
+cn\javahome\frank\cdp\connector\control\entity\ConnectorControlEntity.class
+cn\javahome\frank\cdp\connector\control\controller\ConnectorControlEntryController.class
+cn\javahome\frank\cdp\connector\control\service\ConnectorControlService.class
+cn\javahome\frank\cdp\connector\control\service\impl\ConnectorControlServiceImpl.class
+cn\javahome\frank\cdp\connector\control\feign\ConnectorControlDemoFeignClient.class
+cn\javahome\frank\cdp\connector\control\CdpConnectorControlServiceApplication.class
+cn\javahome\frank\cdp\connector\control\config\ConnectorControlClientConfig.class
+cn\javahome\frank\cdp\connector\control\controller\ConnectorControlController.class
+cn\javahome\frank\cdp\connector\control\config\ConnectorControlModuleConfig.class
+cn\javahome\frank\cdp\connector\control\controller\ConnectorControlController$ImportDeployRequest.class
+cn\javahome\frank\cdp\connector\control\util\ConnectorControlUtil.class

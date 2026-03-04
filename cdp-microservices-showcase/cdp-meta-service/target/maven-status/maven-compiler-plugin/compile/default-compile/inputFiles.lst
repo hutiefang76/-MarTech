@@ -1,0 +1,9 @@
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\CdpMetaServiceApplication.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\config\MetaModuleConfig.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\controller\CdpMetaServiceController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\controller\MetaEntryController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\entity\MetaEntity.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\feign\MetaDemoFeignClient.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\service\impl\MetaServiceImpl.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\service\MetaService.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-meta-service\src\main\java\cn\javahome\frank\cdp\meta\util\MetaUtil.java

@@ -1,0 +1,29 @@
+package cn.javahome.frank.cdp.segment.controller;
+
+import cn.javahome.frank.cdp.segment.service.SegmentService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
+
+/**
+ * 简化控制器：统一入口，调用 service。
+ */
+@RestController
+@RequestMapping("/segment")
+public class SegmentEntryController {
+
+    private final SegmentService service;
+
+    public SegmentEntryController(SegmentService service) {
+        this.service = service;
+    }
+
+    @GetMapping("/entry")
+    public Map<String, Object> entry(@RequestParam(defaultValue = "t001") String tenantId,
+                                     @RequestParam(defaultValue = "trace-entry") String traceId) {
+        return service.summary(tenantId, traceId);
+    }
+}

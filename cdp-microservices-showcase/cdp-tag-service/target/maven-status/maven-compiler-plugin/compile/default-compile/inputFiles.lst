@@ -1,0 +1,10 @@
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\CdpTagServiceApplication.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\config\TagModuleConfig.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\config\TagServiceClientConfig.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\controller\TagEntryController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\controller\TagServiceController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\entity\TagEntity.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\feign\TagDemoFeignClient.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\service\impl\TagServiceImpl.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\service\TagService.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-tag-service\src\main\java\cn\javahome\frank\cdp\tag\util\TagUtil.java

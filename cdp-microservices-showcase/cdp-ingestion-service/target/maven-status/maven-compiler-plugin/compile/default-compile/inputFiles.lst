@@ -1,0 +1,9 @@
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\CdpIngestionServiceApplication.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\config\IngestionModuleConfig.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\controller\CdpIngestionServiceController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\controller\IngestionEntryController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\entity\IngestionEntity.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\feign\IngestionDemoFeignClient.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\service\impl\IngestionServiceImpl.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\service\IngestionService.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-ingestion-service\src\main\java\cn\javahome\frank\cdp\ingestion\util\IngestionUtil.java

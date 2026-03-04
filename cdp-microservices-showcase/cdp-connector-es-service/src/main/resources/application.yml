@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: cdp-connector-es-service
+server:
+  port: 19104
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cdp_demo?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092

@@ -1,0 +1,9 @@
+cn\javahome\frank\cdp\profile\CdpProfileServiceApplication.class
+cn\javahome\frank\cdp\profile\entity\ProfileEntity.class
+cn\javahome\frank\cdp\profile\controller\ProfileEntryController.class
+cn\javahome\frank\cdp\profile\config\ProfileModuleConfig.class
+cn\javahome\frank\cdp\profile\util\ProfileUtil.class
+cn\javahome\frank\cdp\profile\controller\CdpProfileServiceController.class
+cn\javahome\frank\cdp\profile\feign\ProfileDemoFeignClient.class
+cn\javahome\frank\cdp\profile\service\ProfileService.class
+cn\javahome\frank\cdp\profile\service\impl\ProfileServiceImpl.class

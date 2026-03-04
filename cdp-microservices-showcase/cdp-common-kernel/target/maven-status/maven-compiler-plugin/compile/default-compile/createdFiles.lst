@@ -1,0 +1,10 @@
+cn\javahome\frank\cdp\common\flink\FlinkJobStatusResponse.class
+cn\javahome\frank\cdp\common\tag\TagTaskExecutionMode.class
+cn\javahome\frank\cdp\common\tag\TagTaskStatus.class
+cn\javahome\frank\cdp\common\tag\TagTaskPublishResponse.class
+cn\javahome\frank\cdp\common\flink\FlinkJobSubmitRequest.class
+cn\javahome\frank\cdp\common\flink\FlinkDeployMode.class
+cn\javahome\frank\cdp\common\tag\TagTaskPublishRequest.class
+cn\javahome\frank\cdp\common\TraceHeader.class
+cn\javahome\frank\cdp\common\flink\FlinkJobType.class
+cn\javahome\frank\cdp\common\flink\FlinkJobSubmitResponse.class

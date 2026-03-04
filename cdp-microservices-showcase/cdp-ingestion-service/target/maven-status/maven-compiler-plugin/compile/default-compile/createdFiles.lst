@@ -1,0 +1,9 @@
+cn\javahome\frank\cdp\ingestion\CdpIngestionServiceApplication.class
+cn\javahome\frank\cdp\ingestion\service\IngestionService.class
+cn\javahome\frank\cdp\ingestion\controller\CdpIngestionServiceController.class
+cn\javahome\frank\cdp\ingestion\util\IngestionUtil.class
+cn\javahome\frank\cdp\ingestion\controller\IngestionEntryController.class
+cn\javahome\frank\cdp\ingestion\service\impl\IngestionServiceImpl.class
+cn\javahome\frank\cdp\ingestion\entity\IngestionEntity.class
+cn\javahome\frank\cdp\ingestion\config\IngestionModuleConfig.class
+cn\javahome\frank\cdp\ingestion\feign\IngestionDemoFeignClient.class

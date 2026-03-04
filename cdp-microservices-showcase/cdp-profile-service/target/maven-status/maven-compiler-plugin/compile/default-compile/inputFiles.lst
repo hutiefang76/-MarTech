@@ -1,0 +1,9 @@
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\CdpProfileServiceApplication.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\config\ProfileModuleConfig.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\controller\CdpProfileServiceController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\controller\ProfileEntryController.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\entity\ProfileEntity.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\feign\ProfileDemoFeignClient.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\service\impl\ProfileServiceImpl.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\service\ProfileService.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-profile-service\src\main\java\cn\javahome\frank\cdp\profile\util\ProfileUtil.java

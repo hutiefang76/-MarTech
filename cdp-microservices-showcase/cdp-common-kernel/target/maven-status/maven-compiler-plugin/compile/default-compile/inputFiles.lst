@@ -1,0 +1,10 @@
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\flink\FlinkDeployMode.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\flink\FlinkJobStatusResponse.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\flink\FlinkJobSubmitRequest.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\flink\FlinkJobSubmitResponse.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\flink\FlinkJobType.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\tag\TagTaskExecutionMode.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\tag\TagTaskPublishRequest.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\tag\TagTaskPublishResponse.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\tag\TagTaskStatus.java
+D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-common-kernel\src\main\java\cn\javahome\frank\cdp\common\TraceHeader.java
