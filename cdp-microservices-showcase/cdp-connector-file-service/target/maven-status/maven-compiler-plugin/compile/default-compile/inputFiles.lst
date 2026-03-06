@@ -1,9 +1,0 @@
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\CdpConnectorFileServiceApplication.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\config\ConnectorFileModuleConfig.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\controller\ConnectorFileEntryController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\controller\ConnectorFileServiceController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\entity\ConnectorFileEntity.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\feign\ConnectorFileDemoFeignClient.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\service\ConnectorFileService.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\service\impl\ConnectorFileServiceImpl.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-file-service\src\main\java\cn\javahome\frank\cdp\connector\file\util\ConnectorFileUtil.java

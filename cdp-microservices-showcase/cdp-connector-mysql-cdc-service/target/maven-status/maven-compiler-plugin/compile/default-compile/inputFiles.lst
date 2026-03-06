@@ -1,9 +1,0 @@
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\CdpConnectorMysqlCdcServiceApplication.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\config\ConnectorMysqlCdcModuleConfig.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\controller\ConnectorMysqlCdcEntryController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\controller\MysqlCdcServiceController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\entity\ConnectorMysqlCdcEntity.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\feign\ConnectorMysqlCdcDemoFeignClient.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\service\ConnectorMysqlCdcService.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\service\impl\ConnectorMysqlCdcServiceImpl.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-mysql-cdc-service\src\main\java\cn\javahome\frank\cdp\connector\mysql\cdc\util\ConnectorMysqlCdcUtil.java

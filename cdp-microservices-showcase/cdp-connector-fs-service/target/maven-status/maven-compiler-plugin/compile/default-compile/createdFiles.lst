@@ -1,9 +1,0 @@
-cn\javahome\frank\cdp\connector\fs\entity\ConnectorFsEntity.class
-cn\javahome\frank\cdp\connector\fs\util\ConnectorFsUtil.class
-cn\javahome\frank\cdp\connector\fs\config\ConnectorFsModuleConfig.class
-cn\javahome\frank\cdp\connector\fs\service\impl\ConnectorFsServiceImpl.class
-cn\javahome\frank\cdp\connector\fs\controller\ConnectorFsEntryController.class
-cn\javahome\frank\cdp\connector\fs\CdpConnectorFsServiceApplication.class
-cn\javahome\frank\cdp\connector\fs\feign\ConnectorFsDemoFeignClient.class
-cn\javahome\frank\cdp\connector\fs\controller\ConnectorFsServiceController.class
-cn\javahome\frank\cdp\connector\fs\service\ConnectorFsService.class

@@ -1,9 +1,0 @@
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\CdpIdentityServiceApplication.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\config\IdentityModuleConfig.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\controller\CdpIdentityServiceController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\controller\IdentityEntryController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\entity\IdentityEntity.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\feign\IdentityDemoFeignClient.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\service\IdentityService.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\service\impl\IdentityServiceImpl.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-identity-service\src\main\java\cn\javahome\frank\cdp\identity\util\IdentityUtil.java

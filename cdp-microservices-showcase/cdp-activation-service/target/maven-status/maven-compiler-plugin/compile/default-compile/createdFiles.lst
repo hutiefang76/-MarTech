@@ -1,9 +1,0 @@
-cn\javahome\frank\cdp\activation\controller\ActivationEntryController.class
-cn\javahome\frank\cdp\activation\service\ActivationService.class
-cn\javahome\frank\cdp\activation\entity\ActivationEntity.class
-cn\javahome\frank\cdp\activation\feign\ActivationDemoFeignClient.class
-cn\javahome\frank\cdp\activation\CdpActivationServiceApplication.class
-cn\javahome\frank\cdp\activation\controller\CdpActivationServiceController.class
-cn\javahome\frank\cdp\activation\config\ActivationModuleConfig.class
-cn\javahome\frank\cdp\activation\service\impl\ActivationServiceImpl.class
-cn\javahome\frank\cdp\activation\util\ActivationUtil.class

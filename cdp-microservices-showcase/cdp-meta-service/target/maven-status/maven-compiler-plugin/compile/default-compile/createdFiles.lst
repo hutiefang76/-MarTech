@@ -1,9 +1,0 @@
-cn\javahome\frank\cdp\meta\CdpMetaServiceApplication.class
-cn\javahome\frank\cdp\meta\config\MetaModuleConfig.class
-cn\javahome\frank\cdp\meta\feign\MetaDemoFeignClient.class
-cn\javahome\frank\cdp\meta\controller\CdpMetaServiceController.class
-cn\javahome\frank\cdp\meta\entity\MetaEntity.class
-cn\javahome\frank\cdp\meta\service\impl\MetaServiceImpl.class
-cn\javahome\frank\cdp\meta\service\MetaService.class
-cn\javahome\frank\cdp\meta\util\MetaUtil.class
-cn\javahome\frank\cdp\meta\controller\MetaEntryController.class

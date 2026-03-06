@@ -1,9 +1,0 @@
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\CdpConnectorKafkaServiceApplication.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\config\ConnectorKafkaModuleConfig.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\controller\ConnectorKafkaEntryController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\controller\ConnectorKafkaServiceController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\entity\ConnectorKafkaEntity.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\feign\ConnectorKafkaDemoFeignClient.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\service\ConnectorKafkaService.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\service\impl\ConnectorKafkaServiceImpl.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-connector-kafka-service\src\main\java\cn\javahome\frank\cdp\connector\kafka\util\ConnectorKafkaUtil.java

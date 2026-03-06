@@ -1,9 +1,0 @@
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\CdpActivationServiceApplication.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\config\ActivationModuleConfig.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\controller\ActivationEntryController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\controller\CdpActivationServiceController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\entity\ActivationEntity.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\feign\ActivationDemoFeignClient.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\service\ActivationService.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\service\impl\ActivationServiceImpl.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-activation-service\src\main\java\cn\javahome\frank\cdp\activation\util\ActivationUtil.java

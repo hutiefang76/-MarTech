@@ -1,9 +1,0 @@
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\CdpAudienceServiceApplication.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\config\AudienceModuleConfig.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\controller\AudienceEntryController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\controller\CdpAudienceServiceController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\entity\AudienceEntity.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\feign\AudienceDemoFeignClient.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\service\AudienceService.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\service\impl\AudienceServiceImpl.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-audience-service\src\main\java\cn\javahome\frank\cdp\audience\util\AudienceUtil.java

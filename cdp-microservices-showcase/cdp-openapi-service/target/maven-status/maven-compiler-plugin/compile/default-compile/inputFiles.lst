@@ -1,9 +1,0 @@
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\CdpOpenapiServiceApplication.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\config\OpenapiModuleConfig.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\controller\CdpOpenapiServiceController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\controller\OpenapiEntryController.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\entity\OpenapiEntity.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\feign\OpenapiDemoFeignClient.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\service\impl\OpenapiServiceImpl.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\service\OpenapiService.java
-D:\workspace\IdeaProjects\magnolia-app-server-services\tools\cdp-microservices-showcase\cdp-openapi-service\src\main\java\cn\javahome\frank\cdp\openapi\util\OpenapiUtil.java

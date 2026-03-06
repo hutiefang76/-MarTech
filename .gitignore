@@ -1,0 +1,24 @@
+# Build artifacts
+**/target/
+**/build/
+*.class
+*.jar
+*.war
+
+# Runtime data / logs
+**/runtime-data/
+**/logs/
+*.log
+*.pid
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.swp
+*.swo

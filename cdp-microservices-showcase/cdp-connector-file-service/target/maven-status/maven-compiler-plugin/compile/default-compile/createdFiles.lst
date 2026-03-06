@@ -1,9 +1,0 @@
-cn\javahome\frank\cdp\connector\file\CdpConnectorFileServiceApplication.class
-cn\javahome\frank\cdp\connector\file\feign\ConnectorFileDemoFeignClient.class
-cn\javahome\frank\cdp\connector\file\service\ConnectorFileService.class
-cn\javahome\frank\cdp\connector\file\entity\ConnectorFileEntity.class
-cn\javahome\frank\cdp\connector\file\util\ConnectorFileUtil.class
-cn\javahome\frank\cdp\connector\file\config\ConnectorFileModuleConfig.class
-cn\javahome\frank\cdp\connector\file\service\impl\ConnectorFileServiceImpl.class
-cn\javahome\frank\cdp\connector\file\controller\ConnectorFileServiceController.class
-cn\javahome\frank\cdp\connector\file\controller\ConnectorFileEntryController.class

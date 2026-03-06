@@ -1,9 +1,0 @@
-cn\javahome\frank\cdp\segment\service\impl\SegmentServiceImpl.class
-cn\javahome\frank\cdp\segment\CdpSegmentServiceApplication.class
-cn\javahome\frank\cdp\segment\entity\SegmentEntity.class
-cn\javahome\frank\cdp\segment\util\SegmentUtil.class
-cn\javahome\frank\cdp\segment\controller\SegmentEntryController.class
-cn\javahome\frank\cdp\segment\config\SegmentModuleConfig.class
-cn\javahome\frank\cdp\segment\feign\SegmentDemoFeignClient.class
-cn\javahome\frank\cdp\segment\service\SegmentService.class
-cn\javahome\frank\cdp\segment\controller\CdpSegmentServiceController.class

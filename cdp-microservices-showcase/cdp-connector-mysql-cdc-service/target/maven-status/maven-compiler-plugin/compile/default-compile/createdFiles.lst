@@ -1,9 +1,0 @@
-cn\javahome\frank\cdp\connector\mysql\cdc\service\ConnectorMysqlCdcService.class
-cn\javahome\frank\cdp\connector\mysql\cdc\service\impl\ConnectorMysqlCdcServiceImpl.class
-cn\javahome\frank\cdp\connector\mysql\cdc\config\ConnectorMysqlCdcModuleConfig.class
-cn\javahome\frank\cdp\connector\mysql\cdc\controller\MysqlCdcServiceController.class
-cn\javahome\frank\cdp\connector\mysql\cdc\util\ConnectorMysqlCdcUtil.class
-cn\javahome\frank\cdp\connector\mysql\cdc\CdpConnectorMysqlCdcServiceApplication.class
-cn\javahome\frank\cdp\connector\mysql\cdc\feign\ConnectorMysqlCdcDemoFeignClient.class
-cn\javahome\frank\cdp\connector\mysql\cdc\entity\ConnectorMysqlCdcEntity.class
-cn\javahome\frank\cdp\connector\mysql\cdc\controller\ConnectorMysqlCdcEntryController.class
